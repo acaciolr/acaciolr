@@ -76,7 +76,11 @@ source** e **mentoria**. Estão as duas aqui embaixo.
 
 ## Projetos
 
-### [ORA BRABO](https://github.com/acaciolr/ora-brabo) · `em produção`
+Tudo roda no terminal, por SSH, sem agente e sem servidor web para expor.
+
+### Monitoração no terminal
+
+#### [ORA BRABO](https://github.com/acaciolr/ora-brabo) · `em produção`
 
 Monitoramento Oracle direto no terminal, construído em Textual. 12 painéis acessíveis por
 teclas de função, cobrindo RAC, Data Guard, ASM e Exadata. Os coletores são assíncronos —
@@ -84,14 +88,32 @@ a interface não trava esperando query voltar.
 
 `Python` `Textual` `Oracle` `RAC` `Data Guard` `ASM` `Exadata`
 
-### [SQL BRABO](https://github.com/acaciolr/sql-brabo) · `em homologação`
+#### [SQL BRABO](https://github.com/acaciolr/sql-brabo) · `em produção`
 
-Automação e diagnóstico para SQL Server: análise de tempdb, restore automatizado com
-stored procedures próprias e rotinas de import/export via BCP.
+O ORA BRABO para SQL Server — o Activity Monitor que você acessa por SSH. Sessões, Top SQL,
+waits, bloqueios, Always On, log shipping, backups, TempDB e um Advisor com regras
+automáticas, tudo lido de DMVs, de SQL Server 2012 a 2025, em Windows ou Linux.
 
-`SQL Server` `T-SQL` `PowerShell` `BCP`
+`Python` `Textual` `SQL Server` `DMV` `Always On`
 
-### [MyBraboSat](https://github.com/acaciolr/mybrabosat) · `em produção`
+#### [PG BRABO](https://github.com/acaciolr/pg_brabo) · `em produção`
+
+*The pgAdmin you SSH into.* Cockpit PostgreSQL no terminal: monitoramento, performance,
+backup/recovery, replicação, HA e segurança.
+
+`Python` `PostgreSQL` `TUI`
+
+### Diagnóstico, segurança e operação
+
+#### [ORACLE RECOVERY BRABO](https://github.com/acaciolr/oracle-recovery-database-framework) · `em produção`
+
+Orquestrador de backup, restore e recovery Oracle para Unix, guiado pelo princípio
+**descobrir → validar → planejar → mostrar comandos → mostrar riscos** antes de executar
+qualquer coisa. Shell POSIX (`ksh`/`sh`), 14 áreas.
+
+`Oracle` `RMAN` `Shell`
+
+#### [MyBraboSat](https://github.com/acaciolr/mybrabosat) · `em produção`
 
 Security assessment de MySQL em um único arquivo `.sql`, somente leitura: 53 verificações
 em contas, privilégios, rede e criptografia, configuração, auditoria e dados pessoais (LGPD),
@@ -100,7 +122,7 @@ autocontido, em PDF pelo próprio relatório e em texto para ler no terminal.
 
 `MySQL` `SQL` `Segurança` `CIS` `LGPD`
 
-### [BSAR — BRABO Slow Analyze Report](https://github.com/acaciolr/bsar) · `em produção`
+#### [BSAR — BRABO Slow Analyze Report](https://github.com/acaciolr/bsar) · `em produção`
 
 Analisador de slow query log do MySQL, MariaDB e Percona no estilo AWR: lê do arquivo ou da
 `mysql.slow_log`, normaliza e agrega por fingerprint, compara períodos com snapshots em
@@ -109,17 +131,29 @@ com alertas e EXPLAIN das piores queries. Zero dependências externas.
 
 `Python` `MySQL` `MariaDB` `Percona` `Performance`
 
-### MySQL Super DBA v3.0 · `em homologação`
+#### [MySQL Export Users](https://github.com/acaciolr/dbabrabo_mysqlexportusers) · `em produção`
 
-Orquestrador de laboratório sobre VMs Multipass que provisiona 19 topologias MySQL
-completas — InnoDB Cluster, Group Replication, NDB, Percona XtraDB Cluster — com cenários
-de caos e recuperação para treinar troubleshooting de verdade.
+Extensão nativa do **MySQL Shell** que exporta usuários, roles e privilégios em SQL
+idempotente, gera `REVOKE`s para rollback e auditoria e converte sintaxe MariaDB → MySQL.
+Pronto para Git e para replay entre ambientes.
 
-`Python` `Rich` `Multipass` `tmux` `MySQL`
+`MySQL Shell` `MySQL` `MariaDB` `Python`
 
-### PG BRABO · `em desenvolvimento` &nbsp;&nbsp; Recover Database Framework · `em desenvolvimento`
+### Laboratórios Super DBA
 
-Repositórios ainda privados. Vão para o ar quando estiverem apresentáveis.
+Uma plataforma de laboratório por tecnologia, construída para a mentoria
+[DBA BRABO](https://github.com/DBA-BRABO): instala com um comando, sobe os nós e abre um
+menu em que cada opção executa operação real sobre o banco — e termina com `PASS` ou `FAIL`.
+
+| Laboratório | Estado | O que cobre |
+| --- | --- | --- |
+| **SQL Server Super DBA** | `testado em ambiente real` | SQL Server 2022/2025 em Linux: Always On com Pacemaker + listener, log shipping, replicação, PITR, TDE/TLS, IA no 2025 |
+| **PostgreSQL Super DBA** | `em homologação` | replicação, HA, backup/PITR, upgrade, pooling, pgvector, chaos — 112 tópicos executáveis |
+| **MySQL Super DBA** | `em homologação` | 19 topologias: InnoDB Cluster, Group Replication, NDB, Percona XtraDB Cluster, caos e recuperação |
+| **Oracle Super DBA** | `em desenvolvimento` | VMs Oracle Linux reais: RAC com ASM, Data Guard, Exadata e ZDLRA |
+| **MongoDB Super DBA** | `em desenvolvimento` | replica set e sharding |
+
+Os laboratórios são privados: o acesso é liberado para os mentorados da DBA BRABO.
 
 ---
 
