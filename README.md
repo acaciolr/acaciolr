@@ -100,6 +100,15 @@ autocontido, em PDF pelo próprio relatório e em texto para ler no terminal.
 
 `MySQL` `SQL` `Segurança` `CIS` `LGPD`
 
+### [BSAR — BRABO Slow Analyze Report](https://github.com/acaciolr/bsar) · `em produção`
+
+Analisador de slow query log do MySQL, MariaDB e Percona no estilo AWR: lê do arquivo ou da
+`mysql.slow_log`, normaliza e agrega por fingerprint, compara períodos com snapshots em
+SQLite e entrega o relatório no terminal e em HTML interativo, com JSON e CSV. Modo watch
+com alertas e EXPLAIN das piores queries. Zero dependências externas.
+
+`Python` `MySQL` `MariaDB` `Percona` `Performance`
+
 ### MySQL Super DBA v3.0 · `em homologação`
 
 Orquestrador de laboratório sobre VMs Multipass que provisiona 19 topologias MySQL
