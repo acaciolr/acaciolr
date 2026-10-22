@@ -14,7 +14,7 @@
 I keep databases alive where downtime has a price tag. Oracle, MySQL, SQL Server and
 PostgreSQL — high availability, disaster recovery, performance tuning and the kind of
 troubleshooting that happens at 3 a.m. **Oracle ACE Associate**, 14 Oracle credentials,
-and a habit of turning what I learn into open-source tooling. I also founded
+and a habit of turning what I learn into open-source tooling. I also co-founded
 [DBA BRABO](https://dbabrabo.com.br), a technical mentorship program for DBAs in Brazil.
 
 ---
@@ -163,7 +163,7 @@ Os laboratórios são privados: o acesso é liberado para os mentorados da DBA B
 
 ## DBA BRABO
 
-Mentoria técnica para DBAs, fundada por mim. Não é curso gravado: é acompanhamento em
+Mentoria técnica para DBAs que fundei com Luis Macedo e Weverton Amorim. Não é curso gravado: é acompanhamento em
 cima de ambiente real, com trilha por tecnologia — Oracle, MySQL, SQL Server, PostgreSQL,
 MongoDB, GoldenGate, Exadata, ODA, ZDLRA e as três nuvens.
 
