@@ -86,22 +86,16 @@ Monitoramento Oracle direto no terminal, construído em Textual. 12 painéis ace
 teclas de função, cobrindo RAC, Data Guard, ASM e Exadata. Os coletores são assíncronos —
 a interface não trava esperando query voltar.
 
-`Python` `Textual` `Oracle` `RAC` `Data Guard` `ASM` `Exadata`
-
 #### [SQL BRABO](https://github.com/acaciolr/sql-brabo) · `em produção`
 
 O ORA BRABO para SQL Server — o Activity Monitor que você acessa por SSH. Sessões, Top SQL,
 waits, bloqueios, Always On, log shipping, backups, TempDB e um Advisor com regras
 automáticas, tudo lido de DMVs, de SQL Server 2012 a 2025, em Windows ou Linux.
 
-`Python` `Textual` `SQL Server` `DMV` `Always On`
-
 #### [PG BRABO](https://github.com/acaciolr/pg_brabo) · `em produção`
 
 *The pgAdmin you SSH into.* Cockpit PostgreSQL no terminal: monitoramento, performance,
 backup/recovery, replicação, HA e segurança.
-
-`Python` `PostgreSQL` `TUI`
 
 ### Diagnóstico, segurança e operação
 
@@ -111,16 +105,12 @@ Orquestrador de backup, restore e recovery Oracle para Unix, guiado pelo princí
 **descobrir → validar → planejar → mostrar comandos → mostrar riscos** antes de executar
 qualquer coisa. Shell POSIX (`ksh`/`sh`), 14 áreas.
 
-`Oracle` `RMAN` `Shell`
-
 #### [MyBraboSat](https://github.com/acaciolr/mybrabosat) · `em produção`
 
 Security assessment de MySQL em um único arquivo `.sql`, somente leitura: 53 verificações
 em contas, privilégios, rede e criptografia, configuração, auditoria e dados pessoais (LGPD),
 cada falha com o comando de correção e a nota de postura de 0 a 100. Sai em HTML
 autocontido, em PDF pelo próprio relatório e em texto para ler no terminal.
-
-`MySQL` `SQL` `Segurança` `CIS` `LGPD`
 
 #### [BSAR — BRABO Slow Analyze Report](https://github.com/acaciolr/bsar) · `em produção`
 
@@ -129,15 +119,11 @@ Analisador de slow query log do MySQL, MariaDB e Percona no estilo AWR: lê do a
 SQLite e entrega o relatório no terminal e em HTML interativo, com JSON e CSV. Modo watch
 com alertas e EXPLAIN das piores queries. Zero dependências externas.
 
-`Python` `MySQL` `MariaDB` `Percona` `Performance`
-
 #### [MySQL Export Users](https://github.com/acaciolr/dbabrabo_mysqlexportusers) · `em produção`
 
 Extensão nativa do **MySQL Shell** que exporta usuários, roles e privilégios em SQL
 idempotente, gera `REVOKE`s para rollback e auditoria e converte sintaxe MariaDB → MySQL.
 Pronto para Git e para replay entre ambientes.
-
-`MySQL Shell` `MySQL` `MariaDB` `Python`
 
 ### Laboratórios Super DBA
 
