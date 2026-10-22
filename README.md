@@ -91,6 +91,15 @@ stored procedures próprias e rotinas de import/export via BCP.
 
 `SQL Server` `T-SQL` `PowerShell` `BCP`
 
+### [MyBraboSat](https://github.com/acaciolr/mybrabosat) · `em produção`
+
+Security assessment de MySQL em um único arquivo `.sql`, somente leitura: 53 verificações
+em contas, privilégios, rede e criptografia, configuração, auditoria e dados pessoais (LGPD),
+cada falha com o comando de correção e a nota de postura de 0 a 100. Sai em HTML
+autocontido, em PDF pelo próprio relatório e em texto para ler no terminal.
+
+`MySQL` `SQL` `Segurança` `CIS` `LGPD`
+
 ### MySQL Super DBA v3.0 · `em homologação`
 
 Orquestrador de laboratório sobre VMs Multipass que provisiona 19 topologias MySQL
