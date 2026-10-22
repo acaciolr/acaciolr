@@ -136,8 +136,8 @@ menu em que cada opção executa operação real sobre o banco — e termina com
 | **SQL Server Super DBA** | `testado em ambiente real` | SQL Server 2022/2025 em Linux: Always On com Pacemaker + listener, log shipping, replicação, PITR, TDE/TLS, IA no 2025 |
 | **PostgreSQL Super DBA** | `em homologação` | replicação, HA, backup/PITR, upgrade, pooling, pgvector, chaos — 112 tópicos executáveis |
 | **MySQL Super DBA** | `em homologação` | 19 topologias: InnoDB Cluster, Group Replication, NDB, Percona XtraDB Cluster, caos e recuperação |
-| **Oracle Super DBA** | `em desenvolvimento` | VMs Oracle Linux reais: RAC com ASM, Data Guard, Exadata e ZDLRA |
 | **MongoDB Super DBA** | `em homologação` | replica set, sharding, backup/restore com PITR pelo oplog, upgrade/FCV, TLS/x.509 e roles, health/monitoring e chaos/recovery |
+| **Oracle Super DBA** | `em desenvolvimento` | VMs Oracle Linux reais: RAC com ASM, Data Guard, Exadata e ZDLRA |
 
 Os laboratórios são privados: o acesso é liberado para os mentorados da DBA BRABO.
 
